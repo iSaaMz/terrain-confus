@@ -2,10 +2,10 @@
 import { themeColor } from "../data/items";
 import mainPhoto from "../assets/images/about.svg";
 
-const heading = "About";
-const subHeading = "About Us";
-const totalMembers = "50";
-const totalTeam = "20";
+const heading = "À propos";
+const subHeading = "À propos de notre blog";
+const totalAdventures = "150";
+const totalStories = "30";
 </script>
 
 <template>
@@ -17,49 +17,31 @@ const totalTeam = "20";
         </div>
         <div class="col-lg-4">
           <div class="mb-4" data-aos="fade-up" data-aos-delay="0">
-            <span class="caption" :style="[{ color: themeColor }]">{{
-              heading
-            }}</span>
+            <span class="caption" :style="[{ color: themeColor }]">{{ heading }}</span>
             <h2 class="heading">{{ subHeading }}</h2>
           </div>
           <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast
+              Bienvenue sur notre blog dédié aux aventures en terrain confus. Nous partageons ici nos expériences et explorations dans des environnements sauvages et peu connus.
             </p>
             <p>
-              Separated they
-              <span class="highlight"
-                >live in Bookmarksgrove right at the coast of the
-                Semantics</span
-              >, a large language ocean. A small river named Duden flows by
-              their place and supplies it with the necessary regelialia.
+              Notre équipe d'aventuriers
+              <span class="highlight">s'engage à fournir des récits captivants, des conseils pratiques et des récits inspirants</span>. Joignez-vous à nous pour découvrir des endroits extraordinaires et vivre des aventures inoubliables.
             </p>
           </div>
-          <ul
-            class="list-unstyled ul-check primary mb-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <li>There live the blind texts</li>
-            <li>Far far away behind the word</li>
-            <li>Their place and supplies</li>
+          <ul class="list-unstyled ul-check primary mb-4" data-aos="fade-up" data-aos-delay="200">
+            <li>Récits d'aventures passionnants</li>
+            <li>Conseils pratiques pour l'exploration</li>
+            <li>Photos et vidéos captivantes</li>
           </ul>
           <div class="row count-numbers">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
-              <span class="counter d-block"
-                ><span :data-number="totalMembers">{{ totalMembers }}</span
-                ><span>M</span></span
-              >
-              <span class="caption-2">Members</span>
+              <span class="counter d-block"><span :data-number="totalAdventures">{{ totalAdventures }}</span><span></span></span>
+              <span class="caption-2">Aventures partagées</span>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <span class="counter d-block"
-                ><span :data-number="totalTeam">{{ totalTeam }}</span
-                ><span></span
-              ></span>
-              <span class="caption-2">Team</span>
+              <span class="counter d-block"><span :data-number="totalStories">{{ totalStories }}</span><span></span></span>
+              <span class="caption-2">Histoires racontées</span>
             </div>
           </div>
         </div>

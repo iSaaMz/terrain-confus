@@ -2,27 +2,27 @@
 const items = [
   {
     iconBg: "background-color: #6fe7dd",
-    title: "Grow Your Business",
+    title: "Étendez vos Horizons",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Plongez au cœur des aventures en Terrain Confus, bien loin des contrées de Vokalia et Consonantia, là où les textes aveugles prennent vie.",
   },
   {
     iconBg: "background-color: #ffc93c",
-    title: "Build Products",
+    title: "Construisez des Expériences",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Explorez les possibilités infinies en Terrain Confus, loin des sentiers battus de Vokalia et Consonantia, et donnez vie à vos idées les plus audacieuses.",
   },
   {
     iconBg: "background-color: #f73859",
-    title: "Success Each Day",
+    title: "Triomphez à Chaque Pas",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Affrontez les défis quotidiens en Terrain Confus avec détermination, loin des paysages familiers de Vokalia et Consonantia, et découvrez le chemin vers le succès.",
   },
   {
     iconBg: "background-color: #407BFF",
-    title: "Bring Ideas to Life",
+    title: "Transformez vos Rêves en Réalité",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Dans les territoires inexplorés de Terrain Confus, laissez libre cours à votre imagination et donnez vie à vos projets les plus ambitieux loin des contraintes de Vokalia et Consonantia.",
   },
 ];
 </script>

@@ -1,25 +1,25 @@
 <script setup>
 import { themeColor } from "../data/items";
-const heading = "Advantage of using our products";
-const subHeading = "Far from the countries Vokalia and Consonantia";
-const buttonLearnMore = "Learn More";
+const heading = "Explorez les Avantages des Aventures en Terrain Confus";
+const subHeading = "Embarquez pour un voyage loin des contrées familières de Vokalia et Consonantia";
+const buttonLearnMore = "Découvrir Plus";
 const advantages = [
-  {
-    name: "Grow Your Business",
-    des: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-  {
-    name: "Build Products",
-    des: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-  {
-    name: "Success Every Day",
-    des: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-  {
-    name: "Bring Ideas to Life",
-    des: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
+{
+name: "Élargissez Vos Horizons",
+des: "Aventurez-vous bien au-delà des paysages connus, au cœur de Terrain Confus, où l'aventure vous attend.",
+},
+{
+name: "Ouvrez de Nouvelles Voies",
+des: "Dans Terrain Confus, tracez vos propres sentiers au milieu de la nature sauvage, loin de l'agitation de Vokalia et Consonantia.",
+},
+{
+name: "Triomphez au Quotidien",
+des: "Chaque jour en Terrain Confus apporte de nouveaux défis à relever et des victoires à célébrer, sur fond de territoires inexplorés.",
+},
+{
+name: "Donnez Vie à vos Rêves",
+des: "Au cœur de Terrain Confus, où l'imagination ne connaît pas de limites, donnez vie à vos idées les plus audacieuses et regardez-les s'épanouir.",
+},
 ];
 </script>
 

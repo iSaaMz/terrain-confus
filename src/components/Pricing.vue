@@ -1,11 +1,11 @@
 <script setup>
 import { themeColor } from "../data/items";
-const heading = "Pricing";
-const subHeading = "Pricing for everyone. Choose your plan now!";
-const startButtonName = "Get Started";
+const heading = "Tarifs";
+const subHeading = "Des plans pour tous les explorateurs. Choisissez le vôtre dès maintenant !";
+const startButtonName = "Commencer";
 const packages = [
   {
-    name: "Free",
+    name: "Gratuit",
     price: "0",
   },
   {
@@ -18,6 +18,7 @@ const packages = [
   },
 ];
 </script>
+
 <template>
   <div class="untree_co-section bg-light" id="pricing-section">
     <div class="container">
@@ -35,25 +36,19 @@ const packages = [
                 <div class="body">
                   <div class="price">
                     <span class="d-block plan">{{ packages[0].name }}</span>
-                    <span class="price" :style="[{ color: themeColor }]"
-                      ><sup>$</sup><span>{{ packages[0].price }}</span></span
-                    >
+                    <span class="price" :style="[{ color: themeColor }]"><sup>$</sup><span>{{ packages[0].price
+                        }}</span></span>
                   </div>
                   <ul class="list-unstyled ul-check primary mb-5">
-                    <li>There live the blind texts</li>
-                    <li>Far far away behind the word</li>
-                    <li>Far from the countries Vokalia and Consonantia</li>
+                    <li>Accès aux articles de blog</li>
+                    <li>Conseils de base pour l'exploration</li>
+                    <li>Cartes simplifiées</li>
                   </ul>
                   <p class="text-center mb-0">
-                    <a
-                      href="#"
-                      class="btn btn-outline-primary"
-                      :style="[
-                        { color: themeColor },
-                        { borderColor: themeColor },
-                      ]"
-                      >{{ startButtonName }}</a
-                    >
+                    <a href="#" class="btn btn-outline-primary" :style="[
+                      { color: themeColor },
+                      { borderColor: themeColor },
+                    ]">{{ startButtonName }}</a>
                   </p>
                 </div>
               </div>
@@ -63,25 +58,20 @@ const packages = [
                 <div class="body">
                   <div class="price">
                     <span class="d-block plan">{{ packages[1].name }}</span>
-                    <span class="price" :style="[{ color: themeColor }]"
-                      ><sup>$</sup><span>{{ packages[1].price }}</span></span
-                    >
+                    <span class="price" :style="[{ color: themeColor }]"><sup>$</sup><span>{{ packages[1].price
+                        }}</span></span>
                   </div>
                   <ul class="list-unstyled ul-check primary mb-5">
-                    <li>There live the blind texts</li>
-                    <li>Far far away behind the word</li>
-                    <li>Far from the countries Vokalia and Consonantia</li>
+                    <li>Accès complet aux articles de blog</li>
+                    <li>Guides détaillés pour l'exploration</li>
+                    <li>Cartes interactives</li>
+                    <li>Accès aux forums de discussion</li>
                   </ul>
                   <p class="text-center mb-0">
-                    <a
-                      href="#"
-                      class="btn btn-primary"
-                      :style="[
-                        { backgroundColor: themeColor },
-                        { borderColor: themeColor },
-                      ]"
-                      >{{ startButtonName }}</a
-                    >
+                    <a href="#" class="btn btn-primary" :style="[
+                      { backgroundColor: themeColor },
+                      { borderColor: themeColor },
+                    ]">{{ startButtonName }}</a>
                   </p>
                 </div>
               </div>
@@ -91,25 +81,21 @@ const packages = [
                 <div class="body">
                   <div class="price">
                     <span class="d-block plan">{{ packages[2].name }}</span>
-                    <span class="price" :style="[{ color: themeColor }]"
-                      ><sup>$</sup><span>{{ packages[2].price }}</span></span
-                    >
+                    <span class="price" :style="[{ color: themeColor }]"><sup>$</sup><span>{{ packages[2].price
+                        }}</span></span>
                   </div>
                   <ul class="list-unstyled ul-check primary mb-5">
-                    <li>There live the blind texts</li>
-                    <li>Far far away behind the word</li>
-                    <li>Far from the countries Vokalia and Consonantia</li>
+                    <li>Accès complet aux articles de blog</li>
+                    <li>Guides détaillés pour l'exploration</li>
+                    <li>Cartes interactives et personnalisées</li>
+                    <li>Accès aux forums de discussion</li>
+                    <li>Consultations avec des experts</li>
                   </ul>
                   <p class="text-center mb-0">
-                    <a
-                      href="#"
-                      class="btn btn-outline-primary"
-                      :style="[
-                        { color: themeColor },
-                        { borderColor: themeColor },
-                      ]"
-                      >{{ startButtonName }}</a
-                    >
+                    <a href="#" class="btn btn-outline-primary" :style="[
+                      { color: themeColor },
+                      { borderColor: themeColor },
+                    ]">{{ startButtonName }}</a>
                   </p>
                 </div>
               </div>

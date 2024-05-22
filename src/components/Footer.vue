@@ -33,7 +33,24 @@ const socialItems = [
     icon: "icon-pinterest",
   },
 ];
+
+const projects = [
+  "Expédition Amazonie",
+  "Traversée du Sahara",
+  "Aventure Himalaya",
+  "Exploration Arctique",
+  "Randonnée en Forêt Noire",
+];
+
+const services = [
+  "Guides Personnalisés",
+  "Cartographie Interactive",
+  "Conseils d'Experts",
+  "Équipement d'Aventure",
+  "Formations en Navigation",
+];
 </script>
+
 
 <template>
   <div class="site-footer">
@@ -70,11 +87,7 @@ const socialItems = [
           <div class="widget">
             <h3>{{ column2Heading }}</h3>
             <ul class="list-unstyled float-left links">
-              <li><a href="#">La Lega Stadium</a></li>
-              <li><a href="#">France Building</a></li>
-              <li><a href="#">22 New Homes</a></li>
-              <li><a href="#">Manage Center</a></li>
-              <li><a href="#">Sports Hall</a></li>
+              <li v-for="project in projects" :key="project"><a href="#">{{ project }}</a></li>
             </ul>
           </div>
         </div>
@@ -82,10 +95,7 @@ const socialItems = [
           <div class="widget">
             <h3>{{ column3Heading }}</h3>
             <ul class="list-unstyled float-left links">
-              <li><a href="#">Architect</a></li>
-              <li><a href="#">Interior Design</a></li>
-              <li><a href="#">Landscape Design</a></li>
-              <li><a href="#">Consultancy</a></li>
+              <li v-for="service in services" :key="service"><a href="#">{{ service }}</a></li>
             </ul>
           </div>
         </div>
@@ -97,12 +107,12 @@ const socialItems = [
               <li>
                 <a :href="'tel://' + contactInfo.phone1">{{
                   contactInfo.phone1
-                }}</a>
+                  }}</a>
               </li>
               <li>
                 <a :href="'tel://' + contactInfo.phone2">{{
                   contactInfo.phone2
-                }}</a>
+                  }}</a>
               </li>
               <li>
                 <a :href="'mailto:' + contactInfo.email"><span>{{ contactInfo.email }}</span></a>

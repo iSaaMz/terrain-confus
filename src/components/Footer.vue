@@ -1,19 +1,19 @@
 <script setup>
 import { contactInfo } from "../data/items";
 
-const copyrightText = "Copyright 2023, All rights reserved.";
-const column1Heading = "About Launch";
+const copyrightText = "Copyright © 2023 Terrain Confus - All rights reserved.";
+const column1Heading = "Terrain confus";
 const column1Text =
-  "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.";
-const column2Heading = "Projects";
+  "Terrain Confus est un blog d'aventure consacré à l'exploration de terrains difficiles et mystérieux.";
+const column2Heading = "Projets";
 const column3Heading = "Services";
 const column4Heading = "Contact";
 
-const connectHeading = "Connect";
+const connectHeading = "Nos réseaux sociaux";
 
 const socialItems = [
   {
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/terr",
     icon: "icon-instagram",
   },
   {
@@ -49,29 +49,19 @@ const socialItems = [
             <h3>{{ connectHeading }}</h3>
             <ul class="list-unstyled social">
               <li style="margin-right: 4px">
-                <a :href="socialItems[0].link"
-                  ><span :class="socialItems[0].icon"></span
-                ></a>
+                <a :href="socialItems[0].link"><span :class="socialItems[0].icon"></span></a>
               </li>
               <li style="margin-right: 4px">
-                <a :href="socialItems[1].link"
-                  ><span :class="socialItems[1].icon"></span
-                ></a>
+                <a :href="socialItems[1].link"><span :class="socialItems[1].icon"></span></a>
               </li>
               <li style="margin-right: 4px">
-                <a :href="socialItems[2].link"
-                  ><span :class="socialItems[2].icon"></span
-                ></a>
+                <a :href="socialItems[2].link"><span :class="socialItems[2].icon"></span></a>
               </li>
               <li style="margin-right: 4px">
-                <a :href="socialItems[3].link"
-                  ><span :class="socialItems[3].icon"></span
-                ></a>
+                <a :href="socialItems[3].link"><span :class="socialItems[3].icon"></span></a>
               </li>
               <li>
-                <a :href="socialItems[4].link"
-                  ><span :class="socialItems[4].icon"></span
-                ></a>
+                <a :href="socialItems[4].link"><span :class="socialItems[4].icon"></span></a>
               </li>
             </ul>
           </div>
@@ -115,9 +105,7 @@ const socialItems = [
                 }}</a>
               </li>
               <li>
-                <a :href="'mailto:' + contactInfo.email"
-                  ><span>{{ contactInfo.email }}</span></a
-                >
+                <a :href="'mailto:' + contactInfo.email"><span>{{ contactInfo.email }}</span></a>
               </li>
             </ul>
           </div>

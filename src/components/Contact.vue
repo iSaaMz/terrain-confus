@@ -1,15 +1,15 @@
 <script setup>
 import { themeColor, contactInfo } from "../data/items";
 
-const heading = "Get In Touch";
-const subHeading = "Far from the countries Vokalia and Consonantia";
-const contactInfoHeading = "Contact Information";
-const buttonSendMessage = "Send Message";
+const heading = "Contactez-nous";
+const subHeading = "Intéressé par une aventure en terrain confus ? Contactez-nous dès aujourd'hui!";
+const contactInfoHeading = "Informations de contact";
+const buttonSendMessage = "Envoyer le message";
 const labels = {
-  firstName: "First Name",
-  lastName: "Last Name",
-  email: "Email Address",
-  message: "Message",
+  firstName: "Prénom",
+  lastName: "Nom",
+  email: "Adresse email",
+  message: "Votre message",
 };
 </script>
 
@@ -45,22 +45,12 @@ const labels = {
             </div>
             <div class="form-group">
               <label class="" for="message">{{ labels.message }}</label>
-              <textarea
-                name=""
-                class="form-control"
-                id="message"
-                cols="30"
-                rows="5"
-              ></textarea>
+              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
             </div>
-            <button
-              type="submit"
-              class="btn btn-primary"
-              :style="[
-                { backgroundColor: themeColor },
-                { borderColor: themeColor },
-              ]"
-            >
+            <button type="submit" class="btn btn-primary" :style="[
+              { backgroundColor: themeColor },
+              { borderColor: themeColor },
+            ]">
               {{ buttonSendMessage }}
             </button>
           </form>
@@ -68,33 +58,24 @@ const labels = {
         <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
           <h3 class="h5 mb-4">{{ contactInfoHeading }}</h3>
           <address class="text-black d-flex">
-            <span class="mt-1 icon-room mr-2"></span
-            ><span>{{ contactInfo.address }}</span>
+            <span class="mt-1 icon-room mr-2"></span><span>{{ contactInfo.address }}</span>
           </address>
           <ul class="list-unstyled ul-links mb-4">
             <li>
-              <a :href="'tel://' + contactInfo.phone1" class="d-flex"
-                ><span class="mt-1 icon-phone mr-2"></span
-                ><span>{{ contactInfo.phone1 }}</span></a
-              >
+              <a :href="'tel://' + contactInfo.phone1" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>{{
+                contactInfo.phone1 }}</span></a>
             </li>
             <li>
-              <a :href="'tel://' + contactInfo.phone2" class="d-flex"
-                ><span class="mt-1 icon-phone mr-2"></span
-                ><span>{{ contactInfo.phone2 }}</span></a
-              >
+              <a :href="'tel://' + contactInfo.phone2" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>{{
+                contactInfo.phone2 }}</span></a>
             </li>
             <li>
-              <a :href="'mailto:' + contactInfo.email" class="d-flex"
-                ><span class="mt-1 icon-envelope mr-2"></span
-                ><span>{{ contactInfo.email }}</span></a
-              >
+              <a :href="'mailto:' + contactInfo.email" class="d-flex"><span
+                  class="mt-1 icon-envelope mr-2"></span><span>{{ contactInfo.email }}</span></a>
             </li>
             <li>
-              <a :href="[contactInfo.website]" target="_blank" class="d-flex"
-                ><span class="mt-1 icon-globe mr-2"></span
-                ><span>{{ contactInfo.website }}</span></a
-              >
+              <a :href="[contactInfo.website]" target="_blank" class="d-flex"><span
+                  class="mt-1 icon-globe mr-2"></span><span>{{ contactInfo.website }}</span></a>
             </li>
           </ul>
         </div>

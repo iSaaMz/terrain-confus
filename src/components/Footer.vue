@@ -13,15 +13,15 @@ const connectHeading = "Nos réseaux sociaux";
 
 const socialItems = [
   {
-    link: "https://www.instagram.com/terr",
+    link: "https://www.instagram.com/terrainconfus/",
     icon: "icon-instagram",
   },
   {
-    link: "https://www.twitter.com/",
+    link: "https://x.com/ConfusTerr89069/",
     icon: "icon-twitter",
   },
   {
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=61560087722545",
     icon: "icon-facebook",
   },
   {
@@ -107,12 +107,12 @@ const services = [
               <li>
                 <a :href="'tel://' + contactInfo.phone1">{{
                   contactInfo.phone1
-                  }}</a>
+                }}</a>
               </li>
               <li>
                 <a :href="'tel://' + contactInfo.phone2">{{
                   contactInfo.phone2
-                  }}</a>
+                }}</a>
               </li>
               <li>
                 <a :href="'mailto:' + contactInfo.email"><span>{{ contactInfo.email }}</span></a>

@@ -25,7 +25,7 @@ const socialItems = [
     icon: "icon-facebook",
   },
   {
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/terrain-confus-866b9630b/",
     icon: "icon-linkedin",
   },
   {
@@ -107,12 +107,12 @@ const services = [
               <li>
                 <a :href="'tel://' + contactInfo.phone1">{{
                   contactInfo.phone1
-                }}</a>
+                  }}</a>
               </li>
               <li>
                 <a :href="'tel://' + contactInfo.phone2">{{
                   contactInfo.phone2
-                }}</a>
+                  }}</a>
               </li>
               <li>
                 <a :href="'mailto:' + contactInfo.email"><span>{{ contactInfo.email }}</span></a>

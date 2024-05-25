@@ -13,19 +13,19 @@ const connectHeading = "Nos réseaux sociaux";
 
 const socialItems = [
   {
-    link: "https://www.instagram.com/terr",
+    link: "https://www.instagram.com/terrainconfus/",
     icon: "icon-instagram",
   },
   {
-    link: "https://www.twitter.com/",
+    link: "https://x.com/ConfusTerr89069/",
     icon: "icon-twitter",
   },
   {
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=61560087722545",
     icon: "icon-facebook",
   },
   {
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/terrain-confus-866b9630b/",
     icon: "icon-linkedin",
   },
   {

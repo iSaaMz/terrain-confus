@@ -1,176 +1,72 @@
 <script setup>
-const heading = "Notre Blog";
-const subHeading = "Histoires et expériences des aventures en terrain confus";
-const blogItems = [
+const articles = [
   {
-    title: "Exploration des montagnes lointaines",
-    name: "Oliver",
-    date: "Mai 14, 2024",
-    category: "Aventure en Montagne",
-    photo: "images/person_1.jpg",
+    title: "Explorer le Terrain Confus : Guide pour Débutants",
+    snippet: "Plongez dans le monde mystérieux du terrain confus avec ce guide complet pour débutants...",
+    link: "/articles/guide-debutants-terrain-confus",
   },
   {
-    title: "Traversée des forêts inexplorées",
-    name: "Bob",
-    date: "Avril 10, 2024",
-    category: "Aventure en Forêt",
-    photo: "images/person_2.jpg",
+    title: "Les Dangers Cachés du Terrain Confus",
+    snippet: "Découvrez les pièges et les dangers que cache le terrain confus et comment les éviter...",
+    link: "/articles/dangers-terrain-confus",
   },
   {
-    title: "Découverte des déserts mystiques",
-    name: "Fabrice",
-    date: "Mars 20, 2024",
-    category: "Aventure dans le Désert",
-    photo: "images/person_3.jpg",
+    title: "Équipements Essentiels pour l'Exploration",
+    snippet: "Préparez-vous correctement pour vos aventures en terrain confus avec cette liste d'équipements indispensables...",
+    link: "/articles/equipements-exploration-terrain-confus",
+  },
+  {
+    title: "Histoires et Légendes du Terrain Confus",
+    snippet: "Plongez dans les récits fascinants et les légendes entourant le mystérieux terrain confus...",
+    link: "/articles/histoires-legendes-terrain-confus",
   },
 ];
 </script>
 
 <template>
-  <div class="untree_co-section bg-light">
+  <div class="blog-section bg-light" id="blog-section">
     <div class="container">
-      <div class="row mb-4">
+      <div class="row blog-title">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
-          <h2 class="heading">{{ heading }}</h2>
-          <p>{{ subHeading }}</p>
+          <h1 class="heading">Plus sur notre Blog</h1>
+          <p>Découvrez nos articles sur les aventures en terrain confus.</p>
         </div>
       </div>
-      <div class="row">
-        <div
-          class="col-md-6 mb-4 mb-lg-0 col-lg-4"
-          data-aos="fade-up"
-          data-aos-delay="0"
-        >
-          <div class="news-item">
-            <div class="vcard d-flex align-items-center mb-4">
-              <div class="img-wrap">
-                <img :src="blogItems[0].photo" alt="Image" class="img-fluid" />
-              </div>
-              <div class="post-meta">
-                <strong>Posté par {{ blogItems[0].name }}</strong>
-                <span>{{ blogItems[0].date }}</span>
-              </div>
-            </div>
-            <div class="news-contents mb-4">
-              <span class="post-meta-2"
-                >{{ blogItems[0].category }}, 5 min de lecture</span
-              >
-              <h3>
-                <a href="#">{{ blogItems[0].title }}</a>
-              </h3>
-            </div>
-            <p class="mb-0">
-              <a href="#" class="read-more-arrow">
-                <svg
-                  class="bi bi-arrow-right"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"
-                  />
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div
-          class="col-md-6 mb-4 mb-lg-0 col-lg-4"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="news-item">
-            <div class="vcard d-flex align-items-center mb-4">
-              <div class="img-wrap">
-                <img :src="blogItems[1].photo" alt="Image" class="img-fluid" />
-              </div>
-              <div class="post-meta">
-                <strong>Posté par {{ blogItems[1].name }}</strong>
-                <span>{{ blogItems[1].date }}</span>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-lg-6 mb-4" v-for="(article, index) in articles" :key="index" data-aos="fade-up" :data-aos-delay="(index + 1) * 100">
+              <div class="article-card">
+                <h2 class="article-title">{{ article.title }}</h2>
+                <p class="article-snippet">{{ article.snippet }}</p>
+                <p class="text-center mb-0">
+                  <a :href="article.link" class="btn btn-outline-primary" :style="[
+                    { color: themeColor },
+                    { borderColor: themeColor },
+                  ]">Lire la suite</a>
+                </p>
               </div>
             </div>
-            <div class="news-contents mb-4">
-              <span class="post-meta-2"
-                >{{ blogItems[1].category }}, 4 min de lecture</span
-              >
-              <h3>
-                <a href="#">{{ blogItems[1].title }}</a>
-              </h3>
-            </div>
-            <p class="mb-0">
-              <a href="#" class="read-more-arrow">
-                <svg
-                  class="bi bi-arrow-right"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"
-                  />
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="news-item">
-            <div class="vcard d-flex align-items-center mb-4">
-              <div class="img-wrap">
-                <img :src="blogItems[2].photo" alt="Image" class="img-fluid" />
-              </div>
-              <div class="post-meta">
-                <strong>Posté par {{ blogItems[2].name }}</strong>
-                <span>{{ blogItems[2].date }}</span>
-              </div>
-            </div>
-            <div class="news-contents mb-4">
-              <span class="post-meta-2"
-                >{{ blogItems[2].category }}, 5 min de lecture</span
-              >
-              <h3>
-                <a href="#">{{ blogItems[2].title }}</a>
-              </h3>
-            </div>
-            <p class="mb-0">
-              <a href="#" class="read-more-arrow">
-                <svg
-                  class="bi bi-arrow-right"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"
-                  />
-                </svg>
-              </a>
-            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.article-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.article-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.article-snippet {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+</style>

@@ -8,7 +8,7 @@ import { themeColor, siteName } from "../data/items";
         <a href="" class="logo m-0 float-left">{{ siteName }}<span class="text-primary">.</span></a>
         <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-left">
           <li class="active">
-            <a href="#home-section" class="nav-link">Accueil</a>
+            <a href="/" class="nav-link">Accueil</a>
           </li>
           <li class="has-children">
             <a href="#" class="nav-link">Témoignages</a>
@@ -20,6 +20,7 @@ import { themeColor, siteName } from "../data/items";
               <li><a href="#" class="nav-link">Menu trois</a></li>
             </ul>
           </li>
+          <li><a href="/blog" class="nav-link">Blog</a></li>
           <li><a href="#features-section" class="nav-link">Guides</a></li>
           <li><a href="#pricing-section" class="nav-link">Tarifs</a></li>
           <li><a href="#about-section" class="nav-link">À Propos</a></li>

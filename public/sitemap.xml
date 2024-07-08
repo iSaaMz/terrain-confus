@@ -5,11 +5,57 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
   <loc>https://www.terrain-confus-info.com/</loc>
-  <lastmod>2024-05-25T13:23:36+00:00</lastmod>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
 </url>
-
+<url>
+  <loc>https://www.terrain-confus-info.com/blog</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/guide-debutants-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/dangers-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/equipements-exploration-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/histoires-legendes-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/techniques-survie-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/cartographie-orientation-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/flore-faune-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/histoires-survivants-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/preparation-physique-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/gestion-urgence-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.terrain-confus-info.com/blog/equipement-technologique-terrain-confus</loc>
+  <lastmod>2024-07-08T13:23:36+00:00</lastmod>
+</url>
 
 </urlset>

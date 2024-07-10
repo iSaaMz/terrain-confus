@@ -1,14 +1,15 @@
-# terrain-confus
+# Terrain Confus
 
-This template should help get you started developing with Vue 3 in Vite.
+Projet SEO Terrain Confus 4IW1
 
-## Recommended IDE Setup
+# Membres du groupe
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Sami ASSIAKH
+Moussa Seydou TRAORE
 
-## Customize configuration
+# Lien du site 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+https://www.terrain-confus-info.com/
 
 ## Project Setup
 
@@ -16,20 +17,8 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Lancement du projet en developpement
 
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
